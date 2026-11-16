@@ -180,7 +180,7 @@
 		"strength":36,
 		"movement":2,
 		"cost":65,
-		"unitType":"Scrapper"
+		"unitType":"Scrapper",
 		"promotions":[
 			"Urban Warfare I",
 			"Tear Gas",
@@ -728,7 +728,7 @@
 		"strength": 36,
 		"interceptRange": 1,
 		"cost": 75,
-		"requiredTech": "Redomestication",
+		"requiredTech": "Rifling",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Cavalry",
 		"uniques": [
@@ -757,7 +757,7 @@
 		"rangedStrength": 24,
 		"interceptRange": 1,
 		"cost": 80,
-		"requiredTech": "Redomestication",
+		"requiredTech": "Rifling",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Light Cavalry",
 		"uniques": [

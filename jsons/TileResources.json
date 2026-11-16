@@ -28,7 +28,7 @@
 	{
 		"name": "Microchip",
 		"resourceType": "Luxury"
-	}
+	},
 	{
 		"name": "Coffee", //Unique to Nuevo Paraíso, doesn't spawn on map
 		"resourceType": "Luxury",

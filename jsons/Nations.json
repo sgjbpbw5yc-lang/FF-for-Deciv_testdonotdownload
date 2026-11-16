@@ -119,8 +119,8 @@
 		"neutralRejectingDemand": "Mmmm, naaaah.",
 		"hateRejectingDemand": "Nooo!",
 
-        "outerColor": [0, 158, 0],
-        "innerColor": [245, 208, 0],
+        "outerColor": [2, 136, 2],
+        "innerColor": [246, 215, 38],
         "uniqueName": "Land of the Dandelion Eaters",
         "uniques": [
             //"Starts with [Secrets of the Past]",
@@ -292,8 +292,8 @@
 		"neutralRejectingDemand": "Not structurally sound enough.",
 		"hateRejectingDemand": "We live in the dark tunnels, and even we can see that this is not fair.",
 		
-        "outerColor": [0,90,145],
-        "innerColor": [29,171,88],
+        "outerColor": [1, 82, 132],
+        "innerColor": [51, 179, 104],
         "uniqueName": "Underground People",
 		"uniques": [
 			//"Starts with [Civil Service]",
@@ -377,13 +377,13 @@
 		//"style": "",
 		"uniqueName": "Unity Under the Iron Fist",
 		"uniques": [
-			"Chinese Unifier",
+			"Comment [Chinese Unifier]",
 			"[+20]% Production when constructing [Military] units [in all cities]",
 			"[+1] Unit Supply per [3] population [in all cities]",
 			"[15]% growth [in capital]",
 			"[-1 Science] [in all cities] <before discovering [Education]>",
 			"[-1 Culture] [in all cities] <before discovering [Education]>",
-		]
+		],
 		"cities": [
 			"Beijing",
 			"Langfang",
@@ -451,7 +451,7 @@
 		//"style": "",
 		"uniqueName": "Third Northern Expedition",
 		"uniques": [
-			"Chinese Unifier",
+			"Comment [Chinese Unifier]",
 			"[+20]% Strength <for [non-[Low Tech]] units>",
 			"[-20]% Strength <for [Low Tech] units>",
             "[-1] Unit Supply per [4] population [in all cities]",
@@ -918,8 +918,8 @@
 		"neutralRejectingDemand": "This do not interest me.",
 		"hateRejectingDemand": "This is an insult to me.",
 
-		"outerColor": [70, 50, 50],
-		"innerColor": [195,22,22],
+		"outerColor": [56, 41, 41],
+		"innerColor": [210, 80, 80],
 		"style": "Barbarians",
 		"uniqueName": "The Great Unification",
 		"uniques": [

@@ -475,7 +475,7 @@
 		"uniqueTo": "The Confederacy",
 		"cost": 70,
 		"cityStrength": 20,
-		"replaces":"Walls"
+		"replaces":"Walls",
 		"uniques": [
 			"Only available <in cities with a [Underground Town]>"
 		],
@@ -1114,11 +1114,13 @@
   	{
 		"name": "Biomass Plant",
     		"uniqueTo": "Nuevo Paraíso",
-		"Cost": 170,
+		"cost": 170,
+		"production": 2,
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"uniques": [
 			"Provides [3] [Power]",
+			"[+10]% [Production] [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Ecology"
@@ -1148,10 +1150,12 @@
                 "replaces": "Monastery",
     		"uniqueTo": "Nuevo Paraíso",
 		"faith": 1,
+		"science": 2,
 		"maintenance": 0,
 		"hurryCostModifier": 25,
 		"uniques": [
 			"[+1 Faith] per [4] population [in this city]",
+			"[+1 Science] per [4] population [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Education"
