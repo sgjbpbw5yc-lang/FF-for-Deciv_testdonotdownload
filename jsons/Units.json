@@ -774,7 +774,7 @@
 		],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
-	}
+	},
 
 
 	// Nuevo Paraiso
@@ -798,7 +798,7 @@
 			"Only available <in cities with a [Stable]>",
 			"Never appears as a Barbarian unit"
 		],
-		"promotions": ["Pursuit"]
+		"promotions": ["Pursuit"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -817,7 +817,7 @@
 		"upgradesTo": "Artillery",
 		"obsoleteTech": "Munitions",
 		"uniques": [
-			"Personnel"
+			"Personnel",
 			"[+25]% Strength <vs [Low Tech] units>",
 			"[+33]% Strength <vs [Mounted] units>",
 			"[-50]% Strength <vs [Armor] units> <when attacking>",
