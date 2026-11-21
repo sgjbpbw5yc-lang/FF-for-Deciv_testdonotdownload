@@ -421,7 +421,7 @@
 		"uniqueTo": "Elysium",
 		"requiredTech": "The Wheel",
 		"uniques": ["Unbuildable", "Cannot be purchased", "Will not be displayed in Civilopedia"]
-	},
+	}
 
 	// The Confederacy
 	{
@@ -1102,13 +1102,13 @@
 		"name": "Assign Survivors",
 		"replaces": "Search for Survivors",
 		"uniqueTo": "Nuevo Paraíso",
-                "civilopediaText": [{"text": "The way to govern well is to employ honest men, even if they are our enemies.\n-Simón Bolívar"},],
+                "civilopediaText": [{"text": "The way to govern well is to employ honest men, even if they are our enemies.\n-Simón Bolívar"},]
 		"cost": 20,
 		"isNationalWonder": true,
 		"uniques": [
 			"Free [Worker] appears",
                         "[+1 Production] per [4] population [in this city]"
-		],
+		]
                 "quote": "The way to govern well is to employ honest men, even if they are our enemies.\n-Simón Bolívar",
 	},
   	{
@@ -1166,7 +1166,7 @@
     		"uniqueTo": "Nuevo Paraíso",
 		"faith": 1,
                 "maintenance": 0,
-		"percentStatBonus": { "gold": 5 },
+		"percentStatBonus": { "gold": 5 }
 		"uniques": [
 			"Destroyed when the city is captured",
 		],
