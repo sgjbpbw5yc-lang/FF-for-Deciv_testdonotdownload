@@ -1,46 +1,46 @@
 [
-	//Pengutopia
-	{
-		"name": "Emperor Archer",
-                "replaces": "Archer",
-                "uniqueTo": "Pengutopia",
-		"unitType": "Shooter",
-		"range": 2,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 50,
-		"hurryCostModifier": 20,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Gunman",
-		"uniques": ["Low Tech", 
-			"[+25]% Strength <vs [Low Tech] units>",
-                        "[+50]% Strength <vs [Melee Water] units>",
-                        "[+50]% Strength <vs [Ranged Water] units>"],
-		"attackSound": "arrow"
-	},
-        {
-		"name": "Emperor Guard",
-                "replaces": "Spearman",
-		"unitType": "Scrapper",
-                "uniqueTo": "Pengutopia",
-		"movement": 2,
-		"strength": 20,
-		"cost": 50,
-		"upgradesTo": "Militia",
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Rifling",
-		"uniques": [
-			"Low Tech",
-			"[+50]% Strength <vs [Mounted] units>",
-                        "[+25]% Strength <vs [Melee Water] units>",
-                        "[+25]% Strength <vs [Ranged Water] units>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	// Dandelion
-	{
+  {
+    "name": "Emperor Archer",
+    "replaces": "Archer",
+    "uniqueTo": "Pengutopia",
+    "unitType": "Shooter",
+    "range": 2,
+    "movement": 2,
+    "strength": 15,
+    "rangedStrength": 15,
+    "cost": 50,
+    "hurryCostModifier": 20,
+    "requiredTech": "Iron Working",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Gunman",
+    "uniques": [
+      "Low Tech",
+      "[+25]% Strength <vs [Low Tech] units>",
+      "[+50]% Strength <vs [Melee Water] units>",
+      "[+50]% Strength <vs [Ranged Water] units>"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Emperor Guard",
+    "replaces": "Spearman",
+    "unitType": "Scrapper",
+    "uniqueTo": "Pengutopia",
+    "movement": 2,
+    "strength": 20,
+    "cost": 50,
+    "upgradesTo": "Militia",
+    "hurryCostModifier": 20,
+    "obsoleteTech": "Rifling",
+    "uniques": [
+      "Low Tech",
+      "[+50]% Strength <vs [Mounted] units>",
+      "[+25]% Strength <vs [Melee Water] units>",
+      "[+25]% Strength <vs [Ranged Water] units>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
     "name": "Nomadic Archer",
     "uniqueTo": "Dandelion",
     "replaces": "Archer",
@@ -50,842 +50,769 @@
     "strength": 17,
     "rangedStrength": 16,
     "range": 2,
-       "requiredTech": "Iron Working",
-       "obsoleteTech": "Rifling",
-       "upgradesTo": "Gunman",
-       "hurryCostModifier": 40,
-       "uniques": [
-           "Low Tech",
-           "[+33]% Strength <vs [Low Tech] units>",
-           "[+1] Sight"
-        ],
-        "attackSound": "arrow"
-
-   },
-	{
-		"name": "Clubber",
-		"unitType": "Scrapper",
-		"uniqueTo": "Dandelion",
-		"replaces": "Spearman",
-		"movement": 2,
-		"strength": 25,
-		"cost": 20,
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Militia",
-		"uniques": [
-			"Low Tech",
-			"[+25]% Strength <vs [Personnel] units>"
-		],
-		"promotions": ["Forage"],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Horse Rider",
-		"uniqueTo": "Dandelion",
-		"replaces": "Horseman",
-		"unitType": "Scrapper",
-		"movement": 4,
-		"strength": 20,
-		"cost": 50,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Hussar",
-		"uniques": [
-			"Low Tech",
-			"Mounted",
-			"[+33]% Strength <vs [Low Tech] units>",
-			"No defensive terrain bonus",
-			"Can move after attacking",
-			"[-50]% Strength <vs cities> <when attacking>",
-			"Can only be built <in cities with a [Stable]>"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-
-	// Elysium
-	{
-        "name": "Medic",
-		"replaces": "Crossbowman",
-		"uniqueTo": "Elysium",
-		"unitType": "Shooter",
-		"cost": 35,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 20,
-		"range": 2,
-		"interceptRange": 1,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Support",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Personnel",
-			"All adjacent units heal [+10] HP when healing <in [Friendly Land] tiles>",
-			"[-1] Sight"
-		],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Support",
-		"replaces": "Conscript",
-		"uniqueTo": "Elysium",
-		"unitType": "Shooter",
-		"cost": 60,
-		"movement": 2,
-		"strength": 24,
-		"rangedStrength": 30,
-		"range": 2,
-		"interceptRange": 1,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Combined Arms",
-		"upgradesTo": "NBC Support",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Personnel",
-			"Consumes [1] [Weapons]",
-			"All adjacent units heal [+10] HP when healing <in [Friendly Land] tiles>",
-			"[-1] Sight"
-		],
-		"attackSound": "shot"
-	},
-	{
-		"name": "NBC Support",
-		"replaces": "NBC Conscript",
-		"uniqueTo": "Elysium",
-		"unitType": "Shooter",
-		"cost": 125,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 35,
-		"range": 2,
-		"interceptRange": 1,
-		"requiredTech": "Combined Arms",
-		"upgradesTo": "Black Ops",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Personnel",
-			"Consumes [1] [Weapons]",
-			"Only available <if [Factory] is constructed>",
-			"All adjacent units heal [+10] HP when healing <in [Friendly Land] tiles>"
-		],
-		"promotions": ["Gas Mask"],
-		"attackSound": "shot"
-	},
-
-	// The Confederacy
-	{
-		"name":"Gate Guard",
-		"uniqueTo":"The Confederacy",
-		"strength":36,
-		"movement":2,
-		"cost":65,
-		"unitType":"Scrapper",
-		"promotions":[
-			"Urban Warfare I",
-			"Tear Gas",
-			"Pride"
-		],
-		"uniques":[
-			"Personnel",
-			"Excess Food converted to Production when under construction <when at war>", 
-			"Consumes [1] [Weapons]" 
-		]
-	},
-
-	// Central State
-	{
-		"name": "Communist Vanguard", 
-		"replaces": "NBC Infantry",
-		"uniqueTo": "Central State", 
-		"unitType": "Scrapper",
-		"interceptRange": 1, 
-		"movement": 2,
-		"strength": 52,
-		"cost": 300,
-		"requiredTech": "Plastics", 
-		//"upgradesTo": "", 
-		"uniques": [
-                	"Personnel",
-                	"Consumes [2] [Weapons]",
-                	"Limited to [8] per Civilization", 
-                	"Only available <in cities with a [Armaments Production Line]>", 
-                	"[+10]% Strength <vs [Military] units> <in [Foreign Land] tiles>"
-		], 
-		"promotions": [
-			"Gas Mask", 
-			"Protector of the People"
-		],
-		"attackSound": "machinegun"
-	}, 
-	{
-		"name": "Recovered Dongfei Missiles",
-		"replaces": "Nuclear Missile",
-		"uniqueTo": "Central State",
-		"unitType": "Missile",
-		"range": 20,
-		"strength": 300,
-		"rangedStrength": 300,
-		"cost": 800,
-		"requiredTech": "Rocketry",
-		"uniques": [
-			"Nuclear weapon of Strength [2]",
-			"Blast radius [2]",
-			"Only available <if [Manhattan Project] is constructed>",
-			"Consumes [2] [Uranium]"
-		]
-		//"blastRadius": 2,
-		//"nuclearWeaponOfStrength": 2
-	},
-
-	// Blue Sun
-	// todo: Volunteer Reclaimer and Landing Craft
-	{
-		"name": "Volunteer Reclaimer",
-		"unitType": "Scrapper",
-		"replaces": "Infantry",
-		"uniqueTo": "Blue Sun",
-		"movement": 2,
-		"strength": 45,
-		"interceptRange": 1,
-		"cost": 110,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "NBC Infantry",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Personnel",
-			"Consumes [1] [Weapons]"
-		],
-		"promotions": [
-			"Gas Mask",
-			"Reclamatory Volunteer"
-		],
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Landing Craft",
-		"unitType": "Ranged Water",
-		"uniqueTo": "Blue Sun",
-		"requiredTech": "Sailing",
-		"movement": 4,
-		"strength": 20,
-		"rangedStrength": 15,
-		"range": 1,
-		"cost": 60,
-		"obsoleteTech": "Steam Power",
-		//"upgradesTo": "Gunboat",
-		"uniques": [
-			"Cannot enter ocean tiles",
-			"Can move after attacking",
-			"Eliminates combat penalty for attacking across a coast",
-			"[+100]% Strength <when defending> <when [Embarked]>",
-			"[+20]% Strength <when stacked with a [Civilian] unit>",
-			"Transfer Movement to [Civilian]"
-		],
-		"attackSound": "shot"
-	},
-
-	// Gestalt
-	/*
-	todo:
-	Defender Unit: comes in tiers, can transform into their respective Attacker Unit, more strength when defending when next to other ally units
-	Attacker Unit: comes in tiers, can transform into their respective Defender Unit, more strength when attacking when next to other ally units
-	Coordinator Unit: replaces great general, boosts even more than GG
-	*/
-	{
-		"name": "Inferior Defensive Unit",
-		"unitType": "Scrapper",
-		"replaces": "Spearman",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 20,
-		"cost": 50,
-		"upgradesTo": "Subpar Defensive Unit",
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Rifling",
-		"uniques": [
-			"Defensive Unit",
-			"Low Tech",
-			"[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
-			"Can transform to [Inferior Offensive Unit] <requires [1] movement>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Inferior Offensive Unit",
-		"unitType": "Scrapper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 20,
-		"cost": 50,
-		"upgradesTo": "Subpar Offensive Unit",
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Rifling",
-		"uniques": [
-			"Offensive Unit",
-			"Low Tech",
-			"[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
-			"Can transform to [Inferior Defensive Unit] <requires [1] movement>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Subpar Defensive Unit",
-		"unitType": "Scrapper",
-		"replaces": "Militia",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 36,
-		"interceptRange": 1,
-		"cost": 55,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Standard Defensive Unit",
-		"uniques": [
-			"Defensive Unit",
-			"Personnel",
-			"Consumes [1] [Weapons]",
-			"[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
-			"Can transform to [Subpar Offensive Unit] <requires [1] movement>"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Subpar Offensive Unit",
-		"unitType": "Scrapper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 36,
-		"interceptRange": 1,
-		"cost": 55,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Standard Offensive Unit",
-		"uniques": [
-			"Offensive Unit",
-			"Personnel",
-			"Consumes [1] [Weapons]",
-			"[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
-			"Can transform to [Subpar Defensive Unit] <requires [1] movement>"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Standard Defensive Unit",
-		"unitType": "Scrapper",
-		"replaces": "Soldier",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 40,
-		"interceptRange": 1,
-		"cost": 120,
-		"upgradesTo": "Improved Defensive Unit",
-		"hurryCostModifier": 20,
-		"requiredTech": "Rifling",
-		"uniques": [
-			"Defensive Unit",
-			"Personnel",
-			"[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
-			"Can transform to [Standard Offensive Unit] <requires [1] movement>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Standard Offensive Unit",
-		"unitType": "Scrapper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 40,
-		"interceptRange": 1,
-		"cost": 120,
-		"upgradesTo": "Improved Offensive Unit",
-		"hurryCostModifier": 20,
-		"requiredTech": "Rifling",
-		"uniques": [
-			"Offensive Unit",
-			"Personnel",
-			"[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
-			"Can transform to [Standard Defensive Unit] <requires [1] movement>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Improved Defensive Unit",
-		"unitType": "Scrapper",
-		"replaces": "Infantry",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 45,
-		"interceptRange": 1,
-		"cost": 125,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Superior Defensive Unit",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Defensive Unit",
-			"Personnel",
-			"Consumes [1] [Weapons]",
-			"[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
-			"Can transform to [Improved Offensive Unit] <requires [1] movement>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Improved Offensive Unit",
-		"unitType": "Scrapper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 45,
-		"interceptRange": 1,
-		"cost": 125,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Superior Offensive Unit",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Offensive Unit",
-			"Personnel",
-			"Consumes [1] [Weapons]",
-			"[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
-			"Can transform to [Improved Defensive Unit] <requires [1] movement>"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Superior Defensive Unit",
-		"unitType": "Scrapper",
-		"replaces": "NBC Infantry",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 45,
-		"interceptRange": 1,
-		"cost": 230,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Ultimate Defensive Unit",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Defensive Unit",
-			"Personnel",
-			"Only available <if [Factory] is constructed>",
-			"Consumes [1] [Weapons]",
-			"[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
-			"Can transform to [Superior Offensive Unit] <requires [1] movement>"
-		],
-		"promotions": ["Gas Mask"],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Superior Offensive Unit",
-		"unitType": "Scrapper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 45,
-		"interceptRange": 1,
-		"cost": 230,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Ultimate Offensive Unit",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Offensive Unit",
-			"Personnel",
-			"Only available <if [Factory] is constructed>",
-			"Consumes [1] [Weapons]",
-			"[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
-			"Can transform to [Superior Defensive Unit] <requires [1] movement>"
-		],
-		"promotions": ["Gas Mask"],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Ultimate Defensive Unit",
-		"unitType": "Scrapper",
-		"replaces": "Exo-Trooper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 60,
-		"interceptRange": 1,
-		"cost": 280,
-		"requiredTech": "Energy Weapons",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Defensive Unit",
-			"Personnel",
-			"Only available <if [Automated Factory] is constructed>",
-			"Consumes [2] [Weapons]",
-			"[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
-			"Can transform to [Ultimate Offensive Unit] <requires [1] movement>"
-		],
-		"promotions": [
-			"Powered Armor",
-			"Gas Mask"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Ultimate Offensive Unit",
-		"unitType": "Scrapper",
-		"uniqueTo": "Gestalt",
-		"movement": 2,
-		"strength": 60,
-		"interceptRange": 1,
-		"cost": 280,
-		"requiredTech": "Energy Weapons",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Offensive Unit",
-			"Personnel",
-			"Only available <if [Automated Factory] is constructed>",
-			"Consumes [2] [Weapons]",
-			"[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
-			"Can transform to [Ultimate Defensive Unit] <requires [1] movement>"
-		],
-		"promotions": [
-			"Powered Armor",
-			"Gas Mask"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Coordinator Unit",
-		"unitType": "Civilian",
-		"replaces": "Great General",
-		"uniqueTo": "Gestalt",
-		"uniques": [
-			"[+15]% Strength bonus for [Military] units within [2] tiles",
-			"[+5]% Strength bonus for [Military] units within [2] tiles <when adjacent to a [Coordinator Unit] unit>",
-			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
-			"Great Person - [War]",
-			"Can be earned through combat",
-			"Unbuildable",
-			"Uncapturable"
-		],
-		"movement": 2
-	},
-
-	// The Wild
-	/*
-	todo:
-	+ Totem units: more strength per Totem promos they have
-	Totem Warrior
-	Totem Archer
-	Totem Rider
-	Totem Thunderstick
-	Totem Bow Rider
-	Totem Thunderstick Rider
-	Totem Gunner
-	Totem Gun Rider
-	*/
-	{
-		"name": "Totem Warrior",
-		"unitType": "Scrapper",
-		"replaces": "Spearman",
-		"uniqueTo": "The Wild",
-		"movement": 2,
-		"strength": 20,
-		"cost": 50,
-		"upgradesTo": "Totem Gunner",
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Rifling",
-		"uniques": [
-			"Low Tech",
-			"[+50]% Strength <vs [Mounted] units>"
-		],
-		"promotions":[
-			"Totem Scrapper"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Totem Archer",
-		"unitType": "Shooter",
-		"replaces": "Archer",
-		"uniqueTo": "The Wild",
-		"range": 1,
-		"movement": 2,
-		"strength": 18,
-		"rangedStrength": 15,
-		"cost": 35,
-		"hurryCostModifier": 20,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Totem Thunderstick",
-		"uniques": [
-			"Low Tech",
-			"[+50]% Strength <vs [Low Tech] units>"
-		],
-		"promotions":[
-			"Totem Shooter"
-		],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Totem Gunner",
-		"unitType": "Scrapper",
-		"replaces": "Militia",
-		"uniqueTo": "The Wild",
-		"movement": 2,
-		"strength": 36,
-		"interceptRange": 1,
-		"cost": 55,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Soldier",
-		"uniques": [
-			"Personnel",
-			"Consumes [1] [Weapons]"
-		],
-		"promotions":[
-			"Totem Scrapper"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Totem Thunderstick",
-		"unitType": "Shooter",
-		"replaces": "Gunman",
-		"uniqueTo": "The Wild",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 24,
-		"interceptRange": 1,
-		"cost": 60,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Rifleman",
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Personnel",
-			"Consumes [1] [Weapons]"
-		],
-		"promotions":[
-			"Totem Shooter"
-		],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Totem Rider",
-		"unitType": "Scrapper",
-		"replaces": "Horseman",
-		"uniqueTo": "The Wild",
-		"movement": 4,
-		"strength": 20,
-		"cost": 70,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Totem Gun Rider",
-		"uniques": [
-			"Low Tech",
-			"Mounted",
-			"[+50]% Strength <vs [Low Tech] units>",
-			"No defensive terrain bonus",
-			"Can move after attacking",
-			"[-25]% Strength <vs cities> <when attacking>",
-			"Can only be built <in cities with a [Stable]>"
-		],
-		"promotions":[
-			"Totem Mounted Scrapper"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-	{
-		"name": "Totem Bow Rider",
-		"unitType": "Shooter",
-		"replaces": "Skirmisher",
-		"uniqueTo": "The Wild",
-		"range": 1,
-		"movement": 4,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Totem Thunderstick Rider",
-		"uniques": [
-			"Low Tech",
-			"Mounted",
-			"No defensive terrain bonus",
-			"Can move after attacking",
-			"[+33]% Strength <vs [Low Tech] units>",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"Can only be built <in cities with a [Stable]>"
-		],
-		"promotions":[
-			"Totem Mounted Shooter"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-	{
-		"name": "Totem Gun Rider",
-		"unitType": "Scrapper",
-		"replaces": "Hussar",
-		"uniqueTo": "The Wild",
-		"movement": 4,
-		"strength": 36,
-		"interceptRange": 1,
-		"cost": 75,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Cavalry",
-		"uniques": [
-			"Personnel",
-			"Mounted",
-			"No defensive terrain bonus",
-			"Can move after attacking",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"Can only be built <in cities with a [Stable]>",
-			"Consumes [1] [Weapons]"
-		],
-		"promotions":[
-			"Totem Mounted Scrapper"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "shot"
-	},
-	{
-		"name": "Totem Thunderstick Rider",
-		"unitType": "Shooter",
-		"replaces": "Dragoon",
-		"uniqueTo": "The Wild",
-		"range": 1,
-		"movement": 4,
-		"strength": 30,
-		"rangedStrength": 24,
-		"interceptRange": 1,
-		"cost": 80,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Light Cavalry",
-		"uniques": [
-			"Personnel",
-			"Mounted",
-			"No defensive terrain bonus",
-			"Can move after attacking",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"Can only be built <in cities with a [Stable]>",
-			"Consumes [1] [Weapons]"
-		],
-		"promotions":[
-			"Totem Mounted Shooter"
-		],
-		"hurryCostModifier": 20,
-		"attackSound": "shot"
-	},
-
-
-	// Nuevo Paraiso
-	{
-		"name": "Llanero",
-    		"replaces": "Hussar",
-    		"uniqueTo": "Nuevo Paraíso",
-		"unitType": "Mounted",
-		"interceptRange": 1,
-		"movement": 4,
-		"strength": 34,
-		"cost": 75,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Cavalry",
-		"uniques": [
-                        "Personnel",
-			"No defensive terrain bonus",
-			"Can move after attacking",
-			"[-50]% Strength <vs cities> <when attacking>",
-			"Only available <in cities with a [Stable]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": ["Pursuit"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-
-	// Arkadian
-        {
-		"name": "Sonic Cannoneer",
-		"replaces": "Cannon",
-                "uniqueTo": "Arkadia",
-		"unitType": "Siege",
-		"movement": 2,
-		"strength": 20,
-		"rangedStrength": 25,
-		"cost": 130,
-		"requiredTech": "Steel",
-		"upgradesTo": "Artillery",
-		"obsoleteTech": "Munitions",
-		"uniques": [
-			"Personnel",
-			"[+25]% Strength <vs [Low Tech] units>",
-			"[+33]% Strength <vs [Mounted] units>",
-			"[-50]% Strength <vs [Armor] units> <when attacking>",
-			"Consumes [1] [Weapons]",
-			"Never appears as a Barbarian unit"
-		],
-		"attackSound": "cannon",
-	},
-
-	// Raider Kingdom
-	{
-		"name": "Ambusher",
-		"replaces": "Crossbowman",
-		"uniqueTo": "Raider Kingdom",
-		"unitType": "Shooter",
-		"range": 1,
-		"movement": 2,
-		"strength": 20,
-		"rangedStrength": 20,
-		"cost": 40,
-		"hurryCostModifier": 20,
-		"requiredTech": "Steel",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Gunman",
-		"uniques": [
-			"Low Tech",
-			"[+50]% Strength <vs [Low Tech] units>",
-			"Ignores terrain cost",
-			"Invisible to non-adjacent units"
-		],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Spotter",
-		"replaces": "Scout",
-		"uniqueTo": "Raider Kingdom",
-		"unitType": "Scout",
-		"movement": 2,
-		"strength": 12,
-		"cost": 25,
-		"upgradesTo": "Attack Vehicle",
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Rifling",
-		"uniques": [
-			"Low Tech",
-			"[-50]% Strength <vs cities>",
-			"Unable to capture cities"
-		],
-		"promotions": ["Reconnaissance I", "Skirmish", "Sentry"],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Blessed General",
-		"unitType": "Civilian",
-		"replaces": "Great General",
-		"uniqueTo": "Raider Kingdom",
-		"uniques": [
-			"[+15]% Strength bonus for [Military] units within [2] tiles",
-			"Can see over obstacles",
-			"Ignores terrain cost",
-			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
-			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-			"Great Person - [War]",
-			"Can be earned through combat",
-			"Unbuildable",
-			"Uncapturable"
-		],
-		"movement": 2
-	},
-
+    "requiredTech": "Iron Working",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Gunman",
+    "hurryCostModifier": 40,
+    "uniques": [
+      "Low Tech",
+      "[+33]% Strength <vs [Low Tech] units>",
+      "[+1] Sight"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Clubber",
+    "unitType": "Scrapper",
+    "uniqueTo": "Dandelion",
+    "replaces": "Spearman",
+    "movement": 2,
+    "strength": 25,
+    "cost": 20,
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Militia",
+    "uniques": [
+      "Low Tech",
+      "[+25]% Strength <vs [Personnel] units>"
+    ],
+    "promotions": [
+      "Forage"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Horse Rider",
+    "uniqueTo": "Dandelion",
+    "replaces": "Horseman",
+    "unitType": "Scrapper",
+    "movement": 4,
+    "strength": 20,
+    "cost": 50,
+    "requiredTech": "Redomestication",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Hussar",
+    "uniques": [
+      "Low Tech",
+      "Mounted",
+      "[+33]% Strength <vs [Low Tech] units>",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "[-50]% Strength <vs cities> <when attacking>",
+      "Can only be built <in cities with a [Stable]>"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse"
+  },
+  {
+    "name": "Medic",
+    "replaces": "Crossbowman",
+    "uniqueTo": "Elysium",
+    "unitType": "Shooter",
+    "cost": 35,
+    "movement": 2,
+    "strength": 15,
+    "rangedStrength": 20,
+    "range": 2,
+    "interceptRange": 1,
+    "requiredTech": "Iron Working",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Support",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Personnel",
+      "All adjacent units heal [+10] HP when healing <in [Friendly Land] tiles>",
+      "[-1] Sight"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Support",
+    "replaces": "Conscript",
+    "uniqueTo": "Elysium",
+    "unitType": "Shooter",
+    "cost": 60,
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 30,
+    "range": 2,
+    "interceptRange": 1,
+    "requiredTech": "Rifling",
+    "obsoleteTech": "Combined Arms",
+    "upgradesTo": "NBC Support",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Personnel",
+      "Consumes [1] [Weapons]",
+      "All adjacent units heal [+10] HP when healing <in [Friendly Land] tiles>",
+      "[-1] Sight"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "NBC Support",
+    "replaces": "NBC Conscript",
+    "uniqueTo": "Elysium",
+    "unitType": "Shooter",
+    "cost": 125,
+    "movement": 2,
+    "strength": 30,
+    "rangedStrength": 35,
+    "range": 2,
+    "interceptRange": 1,
+    "requiredTech": "Combined Arms",
+    "upgradesTo": "Black Ops",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Personnel",
+      "Consumes [1] [Weapons]",
+      "Only available <if [Factory] is constructed>",
+      "All adjacent units heal [+10] HP when healing <in [Friendly Land] tiles>"
+    ],
+    "promotions": [
+      "Gas Mask"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Gate Guard",
+    "uniqueTo": "The Confederacy",
+    "strength": 36,
+    "movement": 2,
+    "cost": 65,
+    "unitType": "Scrapper",
+    "promotions": [
+      "Urban Warfare I",
+      "Tear Gas",
+      "Pride"
+    ],
+    "uniques": [
+      "Personnel",
+      "Excess Food converted to Production when under construction <when at war>",
+      "Consumes [1] [Weapons]"
+    ]
+  },
+  {
+    "name": "Communist Vanguard",
+    "replaces": "NBC Infantry",
+    "uniqueTo": "Central State",
+    "unitType": "Scrapper",
+    "interceptRange": 1,
+    "movement": 2,
+    "strength": 52,
+    "cost": 300,
+    "requiredTech": "Plastics",
+    "uniques": [
+      "Personnel",
+      "Consumes [2] [Weapons]",
+      "Limited to [8] per Civilization",
+      "Only available <in cities with a [Armaments Production Line]>",
+      "[+10]% Strength <vs [Military] units> <in [Foreign Land] tiles>"
+    ],
+    "promotions": [
+      "Gas Mask",
+      "Protector of the People"
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Recovered Dongfei Missiles",
+    "replaces": "Nuclear Missile",
+    "uniqueTo": "Central State",
+    "unitType": "Missile",
+    "range": 20,
+    "strength": 300,
+    "rangedStrength": 300,
+    "cost": 800,
+    "requiredTech": "Rocketry",
+    "uniques": [
+      "Nuclear weapon of Strength [2]",
+      "Blast radius [2]",
+      "Only available <if [Manhattan Project] is constructed>",
+      "Consumes [2] [Uranium]"
+    ]
+  },
+  {
+    "name": "Inferior Defensive Unit",
+    "unitType": "Scrapper",
+    "replaces": "Spearman",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 20,
+    "cost": 50,
+    "upgradesTo": "Subpar Defensive Unit",
+    "hurryCostModifier": 20,
+    "obsoleteTech": "Rifling",
+    "uniques": [
+      "Defensive Unit",
+      "Low Tech",
+      "[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
+      "Can transform to [Inferior Offensive Unit] <requires [1] movement>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Inferior Offensive Unit",
+    "unitType": "Scrapper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 20,
+    "cost": 50,
+    "upgradesTo": "Subpar Offensive Unit",
+    "hurryCostModifier": 20,
+    "obsoleteTech": "Rifling",
+    "uniques": [
+      "Offensive Unit",
+      "Low Tech",
+      "[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
+      "Can transform to [Inferior Defensive Unit] <requires [1] movement>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Subpar Defensive Unit",
+    "unitType": "Scrapper",
+    "replaces": "Militia",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 36,
+    "interceptRange": 1,
+    "cost": 55,
+    "requiredTech": "The Wheel",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Standard Defensive Unit",
+    "uniques": [
+      "Defensive Unit",
+      "Personnel",
+      "Consumes [1] [Weapons]",
+      "[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
+      "Can transform to [Subpar Offensive Unit] <requires [1] movement>"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Subpar Offensive Unit",
+    "unitType": "Scrapper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 36,
+    "interceptRange": 1,
+    "cost": 55,
+    "requiredTech": "The Wheel",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Standard Offensive Unit",
+    "uniques": [
+      "Offensive Unit",
+      "Personnel",
+      "Consumes [1] [Weapons]",
+      "[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
+      "Can transform to [Subpar Defensive Unit] <requires [1] movement>"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Standard Defensive Unit",
+    "unitType": "Scrapper",
+    "replaces": "Soldier",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 40,
+    "interceptRange": 1,
+    "cost": 120,
+    "upgradesTo": "Improved Defensive Unit",
+    "hurryCostModifier": 20,
+    "requiredTech": "Rifling",
+    "uniques": [
+      "Defensive Unit",
+      "Personnel",
+      "[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
+      "Can transform to [Standard Offensive Unit] <requires [1] movement>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Standard Offensive Unit",
+    "unitType": "Scrapper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 40,
+    "interceptRange": 1,
+    "cost": 120,
+    "upgradesTo": "Improved Offensive Unit",
+    "hurryCostModifier": 20,
+    "requiredTech": "Rifling",
+    "uniques": [
+      "Offensive Unit",
+      "Personnel",
+      "[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
+      "Can transform to [Standard Defensive Unit] <requires [1] movement>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Improved Defensive Unit",
+    "unitType": "Scrapper",
+    "replaces": "Infantry",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 45,
+    "interceptRange": 1,
+    "cost": 125,
+    "requiredTech": "Replaceable Parts",
+    "upgradesTo": "Superior Defensive Unit",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Defensive Unit",
+      "Personnel",
+      "Consumes [1] [Weapons]",
+      "[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
+      "Can transform to [Improved Offensive Unit] <requires [1] movement>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Improved Offensive Unit",
+    "unitType": "Scrapper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 45,
+    "interceptRange": 1,
+    "cost": 125,
+    "requiredTech": "Replaceable Parts",
+    "upgradesTo": "Superior Offensive Unit",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Offensive Unit",
+      "Personnel",
+      "Consumes [1] [Weapons]",
+      "[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
+      "Can transform to [Improved Defensive Unit] <requires [1] movement>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Superior Defensive Unit",
+    "unitType": "Scrapper",
+    "replaces": "NBC Infantry",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 45,
+    "interceptRange": 1,
+    "cost": 230,
+    "requiredTech": "Plastics",
+    "upgradesTo": "Ultimate Defensive Unit",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Defensive Unit",
+      "Personnel",
+      "Only available <if [Factory] is constructed>",
+      "Consumes [1] [Weapons]",
+      "[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
+      "Can transform to [Superior Offensive Unit] <requires [1] movement>"
+    ],
+    "promotions": [
+      "Gas Mask"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Superior Offensive Unit",
+    "unitType": "Scrapper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 45,
+    "interceptRange": 1,
+    "cost": 230,
+    "requiredTech": "Plastics",
+    "upgradesTo": "Ultimate Offensive Unit",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Offensive Unit",
+      "Personnel",
+      "Only available <if [Factory] is constructed>",
+      "Consumes [1] [Weapons]",
+      "[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
+      "Can transform to [Superior Defensive Unit] <requires [1] movement>"
+    ],
+    "promotions": [
+      "Gas Mask"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Ultimate Defensive Unit",
+    "unitType": "Scrapper",
+    "replaces": "Exo-Trooper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 60,
+    "interceptRange": 1,
+    "cost": 280,
+    "requiredTech": "Energy Weapons",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Defensive Unit",
+      "Personnel",
+      "Only available <if [Automated Factory] is constructed>",
+      "Consumes [2] [Weapons]",
+      "[+10]% Strength <when defending> <when adjacent to a [Defensive Unit] unit>",
+      "Can transform to [Ultimate Offensive Unit] <requires [1] movement>"
+    ],
+    "promotions": [
+      "Powered Armor",
+      "Gas Mask"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Ultimate Offensive Unit",
+    "unitType": "Scrapper",
+    "uniqueTo": "Gestalt",
+    "movement": 2,
+    "strength": 60,
+    "interceptRange": 1,
+    "cost": 280,
+    "requiredTech": "Energy Weapons",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Offensive Unit",
+      "Personnel",
+      "Only available <if [Automated Factory] is constructed>",
+      "Consumes [2] [Weapons]",
+      "[+10]% Strength <when attacking> <when adjacent to a [Offensive Unit] unit>",
+      "Can transform to [Ultimate Defensive Unit] <requires [1] movement>"
+    ],
+    "promotions": [
+      "Powered Armor",
+      "Gas Mask"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Coordinator Unit",
+    "unitType": "Civilian",
+    "replaces": "Great General",
+    "uniqueTo": "Gestalt",
+    "uniques": [
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "[+5]% Strength bonus for [Military] units within [2] tiles <when adjacent to a [Coordinator Unit] unit>",
+      "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+      "Great Person - [War]",
+      "Can be earned through combat",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  },
+  {
+    "name": "Totem Warrior",
+    "unitType": "Scrapper",
+    "replaces": "Spearman",
+    "uniqueTo": "The Wild",
+    "movement": 2,
+    "strength": 20,
+    "cost": 50,
+    "upgradesTo": "Totem Gunner",
+    "hurryCostModifier": 20,
+    "obsoleteTech": "Rifling",
+    "uniques": [
+      "Low Tech",
+      "[+50]% Strength <vs [Mounted] units>"
+    ],
+    "promotions": [
+      "Totem Scrapper"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Totem Archer",
+    "unitType": "Shooter",
+    "replaces": "Archer",
+    "uniqueTo": "The Wild",
+    "range": 1,
+    "movement": 2,
+    "strength": 18,
+    "rangedStrength": 15,
+    "cost": 35,
+    "hurryCostModifier": 20,
+    "requiredTech": "Iron Working",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Totem Thunderstick",
+    "uniques": [
+      "Low Tech",
+      "[+50]% Strength <vs [Low Tech] units>"
+    ],
+    "promotions": [
+      "Totem Shooter"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Totem Gunner",
+    "unitType": "Scrapper",
+    "replaces": "Militia",
+    "uniqueTo": "The Wild",
+    "movement": 2,
+    "strength": 36,
+    "interceptRange": 1,
+    "cost": 55,
+    "requiredTech": "The Wheel",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Soldier",
+    "uniques": [
+      "Personnel",
+      "Consumes [1] [Weapons]"
+    ],
+    "promotions": [
+      "Totem Scrapper"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Totem Thunderstick",
+    "unitType": "Shooter",
+    "replaces": "Gunman",
+    "uniqueTo": "The Wild",
+    "range": 1,
+    "movement": 2,
+    "strength": 30,
+    "rangedStrength": 24,
+    "interceptRange": 1,
+    "cost": 60,
+    "requiredTech": "The Wheel",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Rifleman",
+    "hurryCostModifier": 20,
+    "uniques": [
+      "Personnel",
+      "Consumes [1] [Weapons]"
+    ],
+    "promotions": [
+      "Totem Shooter"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Totem Rider",
+    "unitType": "Scrapper",
+    "replaces": "Horseman",
+    "uniqueTo": "The Wild",
+    "movement": 4,
+    "strength": 20,
+    "cost": 70,
+    "requiredTech": "Redomestication",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Totem Gun Rider",
+    "uniques": [
+      "Low Tech",
+      "Mounted",
+      "[+50]% Strength <vs [Low Tech] units>",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "[-25]% Strength <vs cities> <when attacking>",
+      "Can only be built <in cities with a [Stable]>"
+    ],
+    "promotions": [
+      "Totem Mounted Scrapper"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse"
+  },
+  {
+    "name": "Totem Bow Rider",
+    "unitType": "Shooter",
+    "replaces": "Skirmisher",
+    "uniqueTo": "The Wild",
+    "range": 1,
+    "movement": 4,
+    "strength": 15,
+    "rangedStrength": 15,
+    "cost": 75,
+    "requiredTech": "Iron Working",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Totem Thunderstick Rider",
+    "uniques": [
+      "Low Tech",
+      "Mounted",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "[+33]% Strength <vs [Low Tech] units>",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Can only be built <in cities with a [Stable]>"
+    ],
+    "promotions": [
+      "Totem Mounted Shooter"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse"
+  },
+  {
+    "name": "Totem Gun Rider",
+    "unitType": "Scrapper",
+    "replaces": "Hussar",
+    "uniqueTo": "The Wild",
+    "movement": 4,
+    "strength": 36,
+    "interceptRange": 1,
+    "cost": 75,
+    "requiredTech": "Rifling",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Cavalry",
+    "uniques": [
+      "Personnel",
+      "Mounted",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Can only be built <in cities with a [Stable]>",
+      "Consumes [1] [Weapons]"
+    ],
+    "promotions": [
+      "Totem Mounted Scrapper"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "shot"
+  },
+  {
+    "name": "Totem Thunderstick Rider",
+    "unitType": "Shooter",
+    "replaces": "Dragoon",
+    "uniqueTo": "The Wild",
+    "range": 1,
+    "movement": 4,
+    "strength": 30,
+    "rangedStrength": 24,
+    "interceptRange": 1,
+    "cost": 80,
+    "requiredTech": "Rifling",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Light Cavalry",
+    "uniques": [
+      "Personnel",
+      "Mounted",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Can only be built <in cities with a [Stable]>",
+      "Consumes [1] [Weapons]"
+    ],
+    "promotions": [
+      "Totem Mounted Shooter"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "shot"
+  },
+  {
+    "name": "Llanero",
+    "replaces": "Hussar",
+    "uniqueTo": "Nuevo Paraíso",
+    "unitType": "Mounted",
+    "interceptRange": 1,
+    "movement": 4,
+    "strength": 34,
+    "cost": 75,
+    "requiredTech": "Redomestication",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Cavalry",
+    "uniques": [
+      "Personnel",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "[-50]% Strength <vs cities> <when attacking>",
+      "Only available <in cities with a [Stable]>",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Pursuit"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse"
+  },
+  {
+    "name": "Sonic Cannoneer",
+    "replaces": "Cannon",
+    "uniqueTo": "Arkadia",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 20,
+    "rangedStrength": 25,
+    "cost": 130,
+    "requiredTech": "Steel",
+    "upgradesTo": "Artillery",
+    "obsoleteTech": "Munitions",
+    "uniques": [
+      "Personnel",
+      "[+25]% Strength <vs [Low Tech] units>",
+      "[+33]% Strength <vs [Mounted] units>",
+      "[-50]% Strength <vs [Armor] units> <when attacking>",
+      "Consumes [1] [Weapons]",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "cannon"
+  },
+  {
+    "name": "Ambusher",
+    "replaces": "Crossbowman",
+    "uniqueTo": "Raider Kingdom",
+    "unitType": "Shooter",
+    "range": 1,
+    "movement": 2,
+    "strength": 20,
+    "rangedStrength": 20,
+    "cost": 40,
+    "hurryCostModifier": 20,
+    "requiredTech": "Steel",
+    "obsoleteTech": "Rifling",
+    "upgradesTo": "Gunman",
+    "uniques": [
+      "Low Tech",
+      "[+50]% Strength <vs [Low Tech] units>",
+      "Ignores terrain cost",
+      "Invisible to non-adjacent units"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Spotter",
+    "replaces": "Scout",
+    "uniqueTo": "Raider Kingdom",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 12,
+    "cost": 25,
+    "upgradesTo": "Attack Vehicle",
+    "hurryCostModifier": 20,
+    "obsoleteTech": "Rifling",
+    "uniques": [
+      "Low Tech",
+      "[-50]% Strength <vs cities>",
+      "Unable to capture cities"
+    ],
+    "promotions": [
+      "Reconnaissance I",
+      "Skirmish",
+      "Sentry"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Blessed General",
+    "unitType": "Civilian",
+    "replaces": "Great General",
+    "uniqueTo": "Raider Kingdom",
+    "uniques": [
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Can see over obstacles",
+      "Ignores terrain cost",
+      "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Great Person - [War]",
+      "Can be earned through combat",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  }
 ]
